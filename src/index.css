@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::selection {
+  background-color: #a8eab8;
+  text-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+
+.two-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.four-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+@layer components {
+
+  .wrapper {
+    width: min(1440px, calc(100%-8px));
+    @apply mx-auto px-2 lg:px-0;
+  }
+  
+  .container {
+    width: min(1250px, calc(100%-8px));
+    @apply mx-auto px-2 lg:px-0;
+  }
+  
+  .text-hover {
+    @apply hover:text-primary transition-colors duration-150
+  }
+
+  .bottom-slide {
+    @apply relative after:content-[''] after:absolute after:bottom-[-6px] after:block after:w-0 after:h-[4px] after:rounded-sm after:bg-primary after:left-auto after:right-0 after:transition-all ease-linear after:duration-200 hover:after:w-full hover:after:left-0 hover:after:right-auto;
+  }
+
+  .nav-item {
+    @apply text-hover bottom-slide select-none;
+  }
+
+  .heading-1 {
+    @apply text-[64px] font-bold;
+  }
+
+  .sub-heading-1 {
+    @apply text-[24px] font-bold;
+  }
+
+  .sub-heading-2 {
+    @apply text-[20px] font-bold;
+  }
+
+  .paragraph-1 {
+    @apply text-[20px] font-normal;
+  }
+
+  .paragraph-2 {
+    @apply text-[18px] font-normal;
+  }
+np
+  .paragraph-3-semi {
+    @apply text-[16px] font-semibold;
+  }
+
+  .paragraph-4 {
+    @apply text-[14px] font-normal;
+  }
+
+  .section-name {
+    @apply font-bold dark:text-dark-grey md:sub-heading-1 relative after:absolute after:bg-black dark:after:bg-dark-grey after:top-[50%] after:translate-y-[-50%] after:right-[-50px] after:w-[35px] after:h-[2px];
+  }
+
+  .category-card {
+    @apply w-[180px] h-[250px] bg-white dark:bg-primary dark:text-zinc-200 rounded-lg flex-shrink-0 shadow-lg cursor-pointer hover:bg-primary transition-colors duration-150 select-none snap-start;
+  }
+
+  .footer-heading {
+    @apply sub-heading-2 uppercase mb-[25px] text-primary;
+  }
+
+  .footer-item {
+    @apply flex gap-2 items-center justify-center lg:justify-start mb-2 select-auto hover:text-primary transition-colors duration-200 text-[15px];
+  }
+
+  .tooltip {
+    @apply relative after:hidden hover:after:block  after:content-[attr(message)] after:text-white after:bg-black dark:after:text-neutral-800 dark:after:bg-zinc-50 after:shadow-sm after:whitespace-nowrap after:text-14 after:font-normal after:text-center after:min-w-[80px] after:px-3 after:py-2 after:rounded-md after:absolute after:left-[50%] after:translate-x-[-50%]
+  }
+}

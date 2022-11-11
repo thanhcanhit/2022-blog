@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { BiCodeAlt } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 
 function ContentCard({ data }) {

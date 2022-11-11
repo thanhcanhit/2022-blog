@@ -45,7 +45,7 @@ function Hero() {
 				offset={-50}
 				duration={500}
 				message="Đi đến sản phẩm"
-				className="tooltip hover:animate-none cursor-pointer animate-pulse hover:text-primary dark:text-primary transition-colors duration-100 absolute left-[50%] bottom-[50px] transform translate-x-[-50%] p-2 text-[24px] lg:text-[28px]"
+				className="lg:tooltip hover:animate-none cursor-pointer animate-pulse hover:text-primary dark:text-primary transition-colors duration-100 absolute left-[50%] bottom-[50px] transform translate-x-[-50%] p-2 text-[24px] lg:text-[28px]"
 			>
 				<FaChevronDown />
 			</Link>

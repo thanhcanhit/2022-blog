@@ -24,9 +24,10 @@ body {
 }
 
 ::selection {
-  background-color: #a8eab8;
-  text-shadow: 0 0 4px rgba(0,0,0,.2);
+  background-color: #c3ecae;
+  color: rgb(68, 67, 67);
 }
+
 
 .two-line {
   display: -webkit-box;
@@ -52,6 +53,10 @@ body {
   scrollbar-width: none;  
 }
 
+.tap-hilight-none {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @layer components {
 
   .wrapper {
@@ -73,7 +78,7 @@ body {
   }
 
   .nav-item {
-    @apply text-hover bottom-slide select-none;
+    @apply text-hover bottom-slide select-none cursor-pointer;
   }
 
   .heading-1 {
@@ -95,7 +100,7 @@ body {
   .paragraph-2 {
     @apply text-[18px] font-normal;
   }
-np
+  
   .paragraph-3-semi {
     @apply text-[16px] font-semibold;
   }
@@ -105,11 +110,11 @@ np
   }
 
   .section-name {
-    @apply font-bold dark:text-dark-grey md:sub-heading-1 relative after:absolute after:bg-black dark:after:bg-dark-grey after:top-[50%] after:translate-y-[-50%] after:right-[-50px] after:w-[35px] after:h-[2px];
+    @apply font-bold dark:text-dark-grey text-[24px] md:sub-heading-1 relative after:absolute after:bg-black dark:after:bg-dark-grey after:top-[50%] after:translate-y-[-50%] after:right-[-50px] after:w-[35px] after:h-[2px];
   }
 
   .category-card {
-    @apply w-[180px] h-[250px] bg-white dark:bg-primary dark:text-zinc-200 rounded-lg flex-shrink-0 shadow-lg cursor-pointer hover:bg-primary transition-colors duration-150 select-none snap-start;
+    @apply  w-[180px] h-[250px] bg-white dark:bg-zinc-800 dark:text-dark-grey rounded-lg flex-shrink-0 shadow-lg cursor-pointer hover:bg-primary transition-colors duration-150 select-none snap-start;
   }
 
   .footer-heading {

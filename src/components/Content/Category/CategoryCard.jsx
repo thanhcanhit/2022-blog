@@ -5,7 +5,7 @@ function CategoryCard({ path, name, isActive, handleClick }) {
 		<article
 			className={
 				isActive
-					? "category-card bg-primary dark:text-black cursor-default opacity-80 shadow-none border-4 border-dashed border-black dark:border-white transition-all"
+					? "category-card bg-primary dark:text-white cursor-default opacity-80 shadow-none border-4 border-black dark:border-white transition-all"
 					: "category-card"
 			}
 			onClick={handleClick}

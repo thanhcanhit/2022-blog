@@ -12,23 +12,23 @@ function Hero() {
 			<div className="container flex flex-col items-center text-center lg:text-left lg:flex-row gap-[50px] lg:gap-[100px]">
 				<div className="order-2 lg:order-1 max-w-[665px] mt-[50px]">
 					<h1 className="heading-1 text-[40px] lg:text-[64px] mb-[50px] lg:mb-[32px]">
-						Hi, I'm{" "}
-						<span className=" block lg:inline text-primary">
-							Thanh Cảnh
-						</span>{" "}
-						Front End Dev{" "}
+						Hi, I'm {" "}
+						<span className="block lg:inline-block text-primary">
+							 Thanh Cảnh
+						</span>
+						Front End Dev
 						<span className="block lg:inline text-20 text-primary">
 							tập sự
 						</span>
 					</h1>
-					<p className="lg:border-l-4 lg:border-black pl-2 lg:paragraph-1 text-dark-grey text-justify">
-						Trong trang web này tôi sẽ đăng tải các phần mềm, trang
+					<p className="lg:border-l-4 lg:border-black dark:lg:border-primary lg:pl-2 lg:paragraph-1 text-dark-grey text-justify">
+						Trong trang web này mình sẽ đăng tải các phần mềm, trang
 						web và source code của chúng trong suốt quá trình học
-						tập và nghiên cứu của mình.
+						tập và nghiên cứu của bản thân.
 					</p>
 				</div>
 				<div
-					message="Chào mừng bạn đã ghé thăm trang web của mình"
+					message="Chào mừng bạn đã ghé thăm trang web của mình 😍"
 					className="tooltip order-1 lg:order-2 max-w-[550px] after:animate-pulse after:block"
 				>
 					<img

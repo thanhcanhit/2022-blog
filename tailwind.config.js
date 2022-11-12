@@ -26,7 +26,7 @@ module.exports = {
 			},
 			boxShadow: {
 				c1: "4px 6px 13px rgba(215, 215, 215, 0.25);",
-				s4: "rgba(0, 0, 0, 0.16) 0px 1px 4px;"
+				s4: "rgba(0, 0, 0, 0.16) 0px 1px 4px;",
 			},
 			backgroundImage: {
 				"hero-pattern": "url('./assets/img/Dot.png')",
@@ -34,12 +34,17 @@ module.exports = {
 			animation: {
 				wiggle: "wiggle 1s ease-in-out infinite",
 				spinSlow: "spin 5s linear infinite",
+				tooltip: "tooltip .3s ease-in-out",
 			},
 			keyframes: {
 				wiggle: {
 					"0%, 100%": { transform: "rotate(-3deg)" },
 					"50%": { transform: "rotate(3deg)" },
 				},
+				tooltip: {
+					"0%": { transform: "translate(-50%, 8px)", opacity: 0 },
+					"100%": { transform: "translate(-50%, 0)", opacity: 1 },
+				}
 			},
 		},
 	},

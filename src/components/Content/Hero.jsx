@@ -7,7 +7,7 @@ function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative select-none w-full bg-light-grey-2 dark:bg-zinc-800 dark:text-dark-grey bg-hero-pattern bg-repeat pt-[150px] lg:pt-[200px] pb-[200px] lg:pb-[300px]"
+			className="relative w-full bg-light-grey-2 dark:bg-zinc-800 dark:text-dark-grey bg-hero-pattern bg-repeat pt-[150px] lg:pt-[200px] pb-[200px] lg:pb-[300px]"
 		>
 			<div className="container flex flex-col items-center text-center lg:text-left lg:flex-row gap-[50px] lg:gap-[100px]">
 				<div className="order-2 lg:order-1 max-w-[665px] mt-[50px]">
@@ -21,7 +21,7 @@ function Hero() {
 							tập sự
 						</span>
 					</h1>
-					<p className="lg:paragraph-1 text-dark-grey text-justify">
+					<p className="lg:border-l-4 lg:border-black pl-2 lg:paragraph-1 text-dark-grey text-justify">
 						Trong trang web này tôi sẽ đăng tải các phần mềm, trang
 						web và source code của chúng trong suốt quá trình học
 						tập và nghiên cứu của mình.

@@ -3,103 +3,113 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
-		id: 9,
+		id: 10,
 		name: "Nerd Card",
-		path: "/images/article_section/girl-8.jpg",
+		path: "/images/article_section/girl-10.jpg",
 		link: "https://thanhcanhit.github.io/nerd-card/",
 		date: "10/22/2022",
 		description:
-			"Trang đơn giản có Darkmode dùng React + Tailwindcss để code",
+			"Website đơn giản thử nghiệm Darkmode. Sử dụng React + Tailwindcss.",
 		tag: "Website",
-		srcCode: 'https://github.com/thanhcanhit/nerd-card/tree/main'
+		srcCode: "https://github.com/thanhcanhit/nerd-card/tree/main",
 	},
 	{
-		id: 8,
-		name: "Lasles VPN Landing Page",
-		path: "/images/article_section/girl-1.jpg",
+		id: 9,
+		name: "Lasles VPN",
+		path: "/images/article_section/girl-9.jpg",
 		link: "https://thanhcanhit.github.io/lasles-vpn/",
 		date: "10/01/2022",
 		description:
-			"Landing page đơn giản, sử dụng scss để làm giao diện, thư viện slick carousel để làm slider cuối trang.",
+			"Landing page đơn giản, sử dụng SASS/SCSS để viết css. Dùng thư viện 'slick carousel' để làm SLIDER cuối trang.",
 		tag: "Website",
-		srcCode: 'https://github.com/thanhcanhit/lasles-vpn'
+		srcCode: "https://github.com/thanhcanhit/lasles-vpn",
 	},
 	{
-		id: 7,
+		id: 8,
 		name: "Todo App",
-		path: "/images/article_section/girl-2.jpg",
+		path: "/images/article_section/girl-8.jpg",
 		link: "https://thanhcanhit.github.io/react-todo-app/",
 		date: "09/27/2022",
 		description:
-			"Một phần mềm quản lí việc cần làm đơn giản, được viết hoàn toàn bằng Reactjs. Sử dụng các component của aslatkit.",
+			"Phần mềm quản lí việc cần làm. Được viết bằng Reactjs, sử dụng các Component của @aslatkit.",
 		tag: "Application",
-		srcCode: 'https://github.com/thanhcanhit/react-todo-app'
+		srcCode: "https://github.com/thanhcanhit/react-todo-app",
 	},
 	{
-		id: 6,
+		id: 7,
 		name: "BR Architects",
-		path: "/images/article_section/girl-3.jpg",
+		path: "/images/article_section/girl-7.jpg",
 		link: "https://thanhcanhit.github.io/BR-architects/",
 		date: "09/15/2022",
 		description:
-			"Giao diện website cơ bản dùng Bootstrap 5 để viết, tiết kiệm rất nhiều thời gian so với CSS thuần",
+			"Giao diện website dùng Bootstrap 5 để hiện thực, tiết kiệm rất nhiều thời gian so với CSS thuần.",
 		tag: "Website",
-		srcCode: 'https://github.com/thanhcanhit/BR-architects'
+		srcCode: "https://github.com/thanhcanhit/BR-architects",
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "The Band",
-		path: "/images/article_section/girl-4.jpg",
+		path: "/images/article_section/girl-6.jpg",
 		link: "https://thanhcanhit.github.io/the-band/",
 		date: "08/04/2022",
 		description:
-			"Website đầu tiên mà F8 hướng dẫn làm, nhưng là phiên bản hoàn thiện hơn, đầy đủ hơn vì giới hạn kiến thức lúc đó không đủ để hoàn thành.",
+			"Phiên bản hoàn thiện hơn của website đầu tiên F8 hướng dẫn làm.",
 		tag: "Website",
-		srcCode: 'https://github.com/thanhcanhit/the-band'
+		srcCode: "https://github.com/thanhcanhit/the-band",
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Music Player",
-		path: "/images/article_section/girl-9.jpg",
+		path: "/images/article_section/girl-5.jpg",
 		link: "https://thanhcanhit.github.io/music-player/",
 		date: "06/27/2022",
 		description:
-			'Chào mừng bạn đến với playlist của Changg!. "Phần Mềm" nghe nhạc đơn giản với Js thuần, dưới sự hướng dẫn của F8.',
+			"Ứng dụng nghe nhạc đơn giản với Js thuần, dưới sự hướng dẫn của F8. Chào mừng bạn đến với playlist của Changg!. ",
 		tag: "Application",
-		srcCode: 'https://github.com/thanhcanhit/music-player'
+		srcCode: "https://github.com/thanhcanhit/music-player",
+	},
+	{
+		id: 4,
+		name: "Sum Game",
+		path: "/images/article_section/girl-4.jpg",
+		link: "https://thanhcanhit.github.io/SumGame/",
+		date: "06/16/2022",
+		description: "Tính nhẩm nhảm nhí làm bằng HTML, CSS, JS thuần",
+		tag: "Application",
+		srcCode: "https://github.com/thanhcanhit/SumGame",
 	},
 	{
 		id: 3,
-		name: "Sum Game",
-		path: "/images/article_section/girl-5.jpg",
-		link: "https://thanhcanhit.github.io/SumGame/",
-		date: "06/16/2022",
-		description:
-			"Tựa game đơn giản mình làm đầu tiên khi bước vào con đường lập trình. Ban đầu là C++, hiện tại viết bằng Js đem lại giao diện trực quan dễ dùng hơn.",
-		tag: "Application",
-		srcCode: 'https://github.com/thanhcanhit/SumGame'
-	},
-	{
-		id: 2,
 		name: "Từ vựng tiếng anh",
-		path: "/images/article_section/girl-7.jpg",
+		path: "/images/article_section/girl-3.jpg",
 		link: "https://thanhcanhit.github.io/tuvungtienganh2.4/",
 		date: "5/18/2022",
 		description:
-			'Là phần mềm hoàn chỉnh đầu tiên của mình... 1 ứng dụng chạy trên nền console nhưng vẫn sở hữu giao diện khá "dễ chịu".',
+			'Ứng dụng học từ vựng chạy trên nền console nhưng vẫn sở hữu giao diện khá "dễ chịu", làm bằng C++.',
 		tag: "Application",
-		srcCode: 'https://github.com/thanhcanhit/src-code-tvta-2.4'
+		srcCode: "https://github.com/thanhcanhit/src-code-tvta-2.4",
+	},
+	{
+		id: 2,
+		name: "Blog",
+		path: "/images/article_section/girl-2.jpg",
+		link: "https://thanhcanhit.github.io/Blog/",
+		date: "04/15/2022",
+		description:
+			"Website đơn giản nhưng khá đẹp mắt viết bằng HTML, CSS thuần.",
+		tag: "Website",
+		srcCode: "https://github.com/thanhcanhit/Blog",
 	},
 	{
 		id: 1,
-		name: "Shopee",
-		path: "/images/article_section/girl-10.jpg",
+		name: "Shopee Clone",
+		path: "/images/article_section/girl-1.jpg",
 		link: "https://thanhcanhit.github.io/shopee-f8/",
 		date: "03/07/2022",
 		description:
-			"Mô phỏng lại giao diện cơ bản của trang website shọp pe mà ai cũng biết, dưới sự hướng dẫn của F8.",
+			"Mô phỏng lại giao diện của Shọpee, dưới sự hướng dẫn của F8.",
 		tag: "Website",
-		srcCode: 'https://github.com/thanhcanhit/shopee-f8'
+		srcCode: "https://github.com/thanhcanhit/shopee-f8",
 	},
 ];
 

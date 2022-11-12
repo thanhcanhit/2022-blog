@@ -114,7 +114,7 @@ body {
   }
 
   .category-card {
-    @apply  w-[180px] h-[250px] bg-white dark:bg-zinc-800 dark:text-dark-grey rounded-lg flex-shrink-0 shadow-lg cursor-pointer hover:bg-primary transition-colors duration-150 select-none snap-start;
+    @apply  w-[180px] h-[250px] bg-white dark:bg-zinc-800 dark:text-dark-grey rounded-md flex-shrink-0 shadow-lg cursor-pointer hover:bg-primary transition-colors duration-150 select-none snap-start;
   }
 
   .footer-heading {

@@ -19,7 +19,7 @@ function MainContent({ current }) {
 	return (
 		<section
 			id="production"
-			className="pt-[80px] pb-[150px] bg-white dark:bg-zinc-800 dark:text-dark-grey"
+			className="pt-[80px] pb-[150px] bg-light-grey-2 dark:bg-zinc-800 dark:text-dark-grey"
 		>
 			<div className="container">
 				<section>

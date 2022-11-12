@@ -67,7 +67,9 @@ export default function Header({ isTablet }) {
 					>
 						<li className="nav-item">
 							<Link
-								onClick={isTablet ? toggleMenu.current : ""}
+								onClick={
+									isTablet ? toggleMenu.current : () => {}
+								}
 								to="hero"
 								spy={true}
 								smooth={true}
@@ -79,7 +81,9 @@ export default function Header({ isTablet }) {
 						</li>
 						<li className="nav-item">
 							<Link
-								onClick={isTablet ? toggleMenu.current : ""}
+								onClick={
+									isTablet ? toggleMenu.current : () => {}
+								}
 								to="category"
 								spy={true}
 								smooth={true}
@@ -91,7 +95,9 @@ export default function Header({ isTablet }) {
 						</li>
 						<li className="nav-item">
 							<Link
-								onClick={isTablet ? toggleMenu.current : ""}
+								onClick={
+									isTablet ? toggleMenu.current : () => {}
+								}
 								to="production"
 								spy={true}
 								smooth={true}
@@ -103,7 +109,9 @@ export default function Header({ isTablet }) {
 						</li>
 						<li className="nav-item">
 							<Link
-								onClick={isTablet ? toggleMenu.current : ""}
+								onClick={
+									isTablet ? toggleMenu.current : () => {}
+								}
 								to="about"
 								spy={true}
 								smooth={true}

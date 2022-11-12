@@ -26,6 +26,7 @@ module.exports = {
 			},
 			boxShadow: {
 				c1: "4px 6px 13px rgba(215, 215, 215, 0.25);",
+				s4: "rgba(0, 0, 0, 0.16) 0px 1px 4px;"
 			},
 			backgroundImage: {
 				"hero-pattern": "url('./assets/img/Dot.png')",

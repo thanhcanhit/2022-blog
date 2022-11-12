@@ -7,7 +7,7 @@ function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative select- w-full bg-light-grey-1 dark:bg-zinc-800 dark:text-dark-grey bg-hero-pattern bg-repeat pt-[150px] lg:pt-[200px] pb-[200px] lg:pb-[300px]"
+			className="relative select-none w-full bg-light-grey-2 dark:bg-zinc-800 dark:text-dark-grey bg-hero-pattern bg-repeat pt-[150px] lg:pt-[200px] pb-[200px] lg:pb-[300px]"
 		>
 			<div className="container flex flex-col items-center text-center lg:text-left lg:flex-row gap-[50px] lg:gap-[100px]">
 				<div className="order-2 lg:order-1 max-w-[665px] mt-[50px]">
@@ -45,7 +45,7 @@ function Hero() {
 				offset={-50}
 				duration={500}
 				message="Đi đến sản phẩm"
-				className="lg:tooltip hover:animate-none cursor-pointer animate-pulse hover:text-primary dark:text-primary transition-colors duration-100 absolute left-[50%] bottom-[50px] transform translate-x-[-50%] p-2 text-[24px] lg:text-[28px]"
+				className="inline-block tooltip hover:animate-none cursor-pointer animate-pulse hover:text-primary dark:text-primary transition-colors duration-100 absolute left-[50%] bottom-[50px] transform translate-x-[-50%] p-2 text-[24px] lg:text-[28px]"
 			>
 				<FaChevronDown />
 			</Link>

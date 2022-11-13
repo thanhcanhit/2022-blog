@@ -28,7 +28,7 @@ export default function Footer() {
 						</div>
 						<div
 							className="relative w-[200px] h-[200px] shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 ease-in-out mx-auto lg:ml-[40px] mb-4 tooltip after:-bottom-12"
-							message="2 con người này vẫn đang yêu đương nhe 😂"
+							message="2 con người này vẫn đang yêu đương nhe 😍"
 						>
 							<img
 								alt="Thanh Cảnh & Ngọc Anh"
@@ -38,7 +38,7 @@ export default function Footer() {
 						</div>
 						<div>
 							<p className="text-[15px]">
-								Châm ngôn ưa thích:
+								Câu nói truyền động lực mỗi khi buồn:
 								<span className="italic text-dark-grey block mt-[10px] ml-1">
 									"Có thực lực mới buồn, không có sao phải
 									buồn"

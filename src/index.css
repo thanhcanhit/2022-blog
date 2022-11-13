@@ -126,6 +126,6 @@ body {
   }
 
   .tooltip {
-    @apply relative after:z-[2] after:animate-tooltip after:hidden lg:hover:after:block  after:content-[attr(message)] after:text-white after:bg-black dark:after:text-neutral-800 dark:after:bg-zinc-50 after:shadow-sm after:whitespace-nowrap after:text-14 after:font-semibold after:text-center after:min-w-[80px] after:px-3 after:py-2 after:rounded-md after:absolute after:left-[50%] after:translate-x-[-50%]
+    @apply relative after:z-[2] after:lg:max-w-none after:min-w-[80px] whitespace-nowrap after:overscroll-auto after:animate-tooltip after:hidden lg:hover:after:block  after:content-[attr(message)] after:text-white after:bg-black dark:after:text-neutral-800 dark:after:bg-zinc-50 after:shadow-sm after:text-14 after:font-semibold after:text-center after:px-3 after:py-2 after:rounded-md after:absolute after:left-[50%] after:translate-x-[-50%]
   }
 }

@@ -44,7 +44,7 @@ module.exports = {
 				tooltip: {
 					"0%": { transform: "translate(-50%, 8px)", opacity: 0 },
 					"100%": { transform: "translate(-50%, 0)", opacity: 1 },
-				}
+				},
 			},
 		},
 	},

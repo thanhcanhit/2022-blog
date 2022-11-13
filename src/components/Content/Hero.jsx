@@ -28,8 +28,8 @@ function Hero() {
 					</p>
 				</div>
 				<div
-					message="Chào mừng bạn đã ghé thăm trang web của mình 😍"
-					className="tooltip order-1 lg:order-2 max-w-[550px] after:animate-pulse after:block"
+					message="Chào mừng bạn đã ghé thăm trang web của mình"
+					className="tooltip order-1 lg:order-2 after:min-w-[250px] after:whitespace-normal sm:after:whitespace-nowrap max-w-[550px] after:animate-pulse after:block"
 				>
 					<img
 						src={HeroImg}

@@ -13,7 +13,7 @@ function Hero() {
 				<div className="max-w-[665px] mt-[50px]">
 					<h1 className="heading-1 text-[40px] lg:text-[64px] mb-[50px] lg:mb-[32px]">
 						Hi, I'm {" "}
-						<span className="block lg:inline-block text-primary">
+						<span className="block lg:inline-block animate-flyUp text-primary">
 							 Thanh Cảnh
 						</span>
 						Front End Dev

@@ -8,16 +8,16 @@ export default function Footer() {
 	return (
 		<footer
 			id="about"
-			className="bg-light-grey-1 dark:bg-zinc-700 dark:text-light-grey-2 pt-[70px] pb-[26px]  text-center lg:text-left"
+			className="bg-light-grey-1 dark:bg-zinc-700 dark:text-light-grey-2 pt-16 pb-6 text-center lg:text-left"
 		>
 			<div className="container">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] lg:gap-0">
-					<div className="md:col-span-2 mb-[50px] lg:mb-0">
-						<div className="font-semibold text-36 mb-[20px]">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-0">
+					<div className="md:col-span-2 mb-50 lg:mb-0">
+						<div className="font-semibold text-36 mb-4">
 							thanh
 							<span
 								message="Chiến thần 😈"
-								className="cursor-help after:animate-pulse tooltip"
+								className="cursor-help tooltip after:animate-pulse"
 							>
 								c
 							</span>
@@ -27,19 +27,19 @@ export default function Footer() {
 							</span>
 						</div>
 						<div
-							className="relative w-[200px] h-[200px] shadow-md hover:shadow-lg hover:scale-105 transform transition-all duration-200 ease-in-out mx-auto lg:ml-[40px] mb-4 tooltip after:-bottom-12"
-							message="2 con người này vẫn đang yêu đương nhe 😍"
+							className="relative w-200 h-200 mx-auto lg:ml-10 mb-4 shadow-md hover:shadow-lg hover:cursor-cell hover:transform hover:scale-105 transition-all duration-200 ease-in-out tooltip after:-bottom-12"
+							message="Hai con người này vẫn đang yêu đương nhe 😍"
 						>
 							<img
 								alt="Thanh Cảnh & Ngọc Anh"
-								className="w-[200px] h-[200px] rounded-md object-cover"
+								className="w-200 h-200 object-cover rounded-md"
 								src="/images/about/about.jpg"
 							/>
 						</div>
 						<div>
-							<p className="text-[15px]">
-								Câu nói truyền động lực mỗi khi buồn:
-								<span className="italic text-dark-grey block mt-[10px] ml-1">
+							<p className="text-15">
+								Câu nói truyền động lực nếu bạn đang buồn:
+								<span className="block mt-2 ml-1 italic text-dark-grey">
 									"Có thực lực mới buồn, không có sao phải
 									buồn"
 								</span>
@@ -87,9 +87,9 @@ export default function Footer() {
 						</ul>
 					</div>
 				</div>
-				<div className="mt-[50px]">
+				<div className="mt-50">
 					<hr />
-					<div className="flex justify-between mt-[26px]">
+					<div className="flex justify-between mt-6">
 						<p className="text-primary">@2022ThanhCanh</p>
 						<p>Made with ❤️</p>
 					</div>

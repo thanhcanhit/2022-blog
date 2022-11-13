@@ -10,7 +10,7 @@ function CategoryCard({ path, name, isActive, handleClick }) {
 			}
 			onClick={handleClick}
 		>
-			<div className="mt-[65px] mb-[95px] ml-[20px]">
+			<div className="mt-16 mb-100 ml-5">
 				<img
 					className="bg-white p-2 rounded-lg border border-black"
 					src={path}
@@ -18,7 +18,7 @@ function CategoryCard({ path, name, isActive, handleClick }) {
 					width={60}
 					height={60}
 				/>
-				<h5 className="mt-[30px] sub-heading-1 overflow-hidden text-ellipsis">
+				<h5 className="mt-5 sub-heading-1 overflow-hidden text-ellipsis" title={name}>
 					{name}
 				</h5>
 			</div>

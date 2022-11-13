@@ -7,10 +7,10 @@ function Category({ active, changeCategory }) {
 	const categoryData = useContext(CategoryContext);
 
 	return (
-		<section id="category" className="bg-light-grey-1 dark:bg-zinc-700 dark:text-zinc-300">
-			<div className="container py-[70px]">
-				<SectionTitle name="Browser All Category" />
-				<div className="flex gap-[37px] overflow-auto hidden-scrollbar p-[20px] snap-x snap-mandatory">
+		<section id="category" className="dark:text-white bg-light-grey-1 dark:bg-zinc-700">
+			<div className="container py-16">
+				<SectionTitle name="Danh mục" />
+				<div className="flex gap-9 overflow-hidden hidden-scrollbar p-5 snap-x snap-mandatory">
 					{categoryData.map((item, index) => (
 						<CategoryCard
 							key={index}

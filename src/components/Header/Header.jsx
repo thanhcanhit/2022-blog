@@ -16,12 +16,12 @@ export default function Header({ isTablet }) {
 	});
 
 	return (
-		<header className="fixed z-10 top-0 left-0 right-0 w-full h-[80px] dark:text-dark-grey bg-white dark:bg-[#191919] shadow-c1 dark:shadow-lg">
+		<header className="fixed inset-0 bottom-[unset] w-full h-header z-10 dark:text-dark-grey bg-white dark:bg-dark-black shadow-heading dark:shadow-lg">
 			<div className="flex justify-between items-center h-full container">
-				<div className="flex justify-between w-full lg:w-auto lg:justify-start gap-[20px] items-center ">
+				<div className="flex w-full lg:w-auto justify-between lg:justify-start gap-5 items-center ">
 					<a
 						href="/"
-						className="font-semibold text-[24px] md:text-36 tooltip"
+						className="font-semibold text-24 md:text-36 tooltip"
 						message="Trở về trang chủ"
 					>
 						thanhcanhit
@@ -32,19 +32,17 @@ export default function Header({ isTablet }) {
 					<button
 						onClick={toggleDarkMode}
 						message="Chuyển chế độ sáng/tối"
-						className="relative top-1 select-none lg:tooltip after:top-10"
+						className="relative top-1 select-none tooltip after:top-10"
 					>
 						{isDarkMode ? (
 							<RiMoonClearFill
 								fontSize={22}
-								color="#FEC260"
-								className=" animate-wiggle"
+								className="text-yellow animate-wiggle"
 							/>
 						) : (
 							<HiSun
 								fontSize={28}
-								color="#FEC260"
-								className=" animate-spinSlow"
+								className="text-yellow animate-spinSlow"
 							/>
 						)}
 					</button>
@@ -52,17 +50,17 @@ export default function Header({ isTablet }) {
 				<nav
 					className={
 						isTablet && isOpenMenu
-							? "fixed z-[9] right-0 top-0 bg-white dark:bg-[#191919] bottom-0 shadow-lg transform translate-x-0 transition-transform duration-300"
+							? "nav translate-x-0"
 							: isTablet && !isOpenMenu
-							? "fixed z-[9] right-0 top-0 bg-white dark:bg-[#191919] bottom-0 shadow-lg transform translate-x-full transition-transform duration-300"
+							? "nav"
 							: "hidden lg:block"
 					}
 				>
 					<ul
 						className={
 							isTablet
-								? "flex flex-col items-center px-4 mt-12 gap-[50px] sub-heading-2"
-								: "flex items-center gap-[50px] sub-heading-2"
+								? "nav-list flex-col px-4 mt-12 "
+								: "nav-list"
 						}
 					>
 						<li className="nav-item">
@@ -87,7 +85,7 @@ export default function Header({ isTablet }) {
 								to="category"
 								spy={true}
 								smooth={true}
-								offset={-60}
+								offset={-100}
 								duration={500}
 							>
 								Category
@@ -132,7 +130,7 @@ export default function Header({ isTablet }) {
 				{isTablet && (
 					<>
 						<button
-							className="fixed opacity-80 z-10 bottom-5 right-5 text-white bg-primary shadow-md rounded-md p-1 dark:bg-slate-600 dark:text-white"
+							className="fixed z-10 p-1 bottom-5 right-5 text-white bg-primary dark:bg-gray-600 opacity-80 shadow-md rounded-md "
 							onClick={toggleMenu.current}
 						>
 							{isOpenMenu ? (

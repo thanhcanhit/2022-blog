@@ -11,35 +11,33 @@ function ContentCard({ data }) {
 	}, [date]);
 
 	const stringGap = useMemo(() => {
-		let numDays = Math.floor((Date.now() - date) / (1000 * 3600 * 24));
-		let tempString = `${numDays} ngày trước`;
-		if (numDays === 0) tempString = "Vừa mới xong hôm nay";
-		if (numDays >= 30)
-			tempString = `${Math.floor(numDays / 30)} tháng trước`;
-		if (numDays > 365)
-			tempString = `${Math.floor(numDays / 365)} năm trước`;
+		let dayGap = Math.floor((Date.now() - date) / (1000 * 3600 * 24));
+		let string = `${dayGap} ngày trước`;
+		if (dayGap === 0) string = "Vừa mới xong hôm nay";
+		if (dayGap >= 30) string = `${Math.floor(dayGap / 30)} tháng trước`;
+		if (dayGap > 365) string = `${Math.floor(dayGap / 365)} năm trước`;
 
-		return tempString;
+		return string;
 	}, [date]);
 
 	return (
-		<article className="bg-white dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600 w-full min-h-[300px] flex flex-col p-[20px] rounded-md shadow-md hover:shadow-lg transition-all 	 duration-200 ease-in-out hover:transform hover:translate-y-[-3px] hover:bg-[#DEF5E5]">
+		<article className="content-card">
 			<a href={data.link}>
 				<img
-					className="w-full h-[150px] transition-all duration-300 md:h-[220px] object-top object-cover mb-[25px] rounded-sm"
+					className="w-full h-150 mb-6 transition-all duration-300 md:h-card-img object-top object-cover rounded-sm"
 					alt={data.name}
 					loading="lazy"
 					src={data.path}
 				/>
 				<h4
 					title={data.name}
-					className="text-[15px] sub-heading-2 md:text-[20px] two-line"
+					className="text-15 sub-heading-2 md:text-20 two-line"
 				>
 					{data.name}
 				</h4>
 				<p
 					title={data.description}
-					className="paragraph-4 text-[11px] md:text-[13px] mb-[12px] mt-[8px] text-dark-grey four-line"
+					className="paragraph-4 text-[11px] md:text-13 mb-3 mt-2 text-dark-grey four-line"
 				>
 					{data.description}
 				</p>

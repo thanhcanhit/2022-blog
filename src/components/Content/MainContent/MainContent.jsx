@@ -19,12 +19,12 @@ function MainContent({ current }) {
 	return (
 		<section
 			id="production"
-			className="pt-[80px] pb-[150px] bg-light-grey-2 dark:bg-zinc-800 dark:text-dark-grey"
+			className="pt-header pb-150 bg-light-grey-2 dark:bg-zinc-800 dark:text-dark-grey"
 		>
 			<div className="container">
 				<section>
 					<SectionTitle name={categoryData[current].name} />
-					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[8px] md:gap[15px] lg:gap-[20px]">
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-5">
 						{list.map((item) => (
 							<ContentCard key={item.id} data={item} />
 						))}

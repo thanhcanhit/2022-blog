@@ -1,7 +1,6 @@
 import React, { useContext, useMemo } from "react";
 import { ArticlesContext } from "../../../Context/ArticlesProvider";
 import { CategoryContext } from "../../../Context/CategoryProvider";
-import Button from "../../Button/Button";
 import ContentCard from "./ContentCard";
 
 function MainContent({ current, sortType, changeSortType }) {

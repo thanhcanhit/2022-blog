@@ -46,7 +46,7 @@ export default function Footer() {
 							</p>
 						</div>
 					</div>
-					<div className="">
+					<div className="footer-col">
 						<h4 className="footer-heading">About me</h4>
 						<ul>
 							<li className="footer-item">
@@ -71,7 +71,7 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div>
+					<div className="footer-col">
 						<h4 className="footer-heading">Contact</h4>
 						<ul>
 							<li className="footer-item">

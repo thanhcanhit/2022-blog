@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/img/hero.png";
+import HeroImg from "../../../assets/img/hero.png";
 import { Link } from "react-scroll";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -12,9 +12,9 @@ function Hero() {
 			<div className="container flex flex-col-reverse lg:flex-row items-center text-center lg:text-left gap-[50px] lg:gap-[100px]">
 				<div className="max-w-[665px] mt-[50px]">
 					<h1 className="heading-1 text-[40px] lg:text-[64px] mb-[50px] lg:mb-[32px]">
-						Hi, I'm {" "}
+						Hi, I'm{" "}
 						<span className="block lg:inline-block animate-flyUp text-primary">
-							 Thanh Cảnh
+							Thanh Cảnh
 						</span>
 						Front End Dev
 						<span className="block lg:inline text-20 text-primary">

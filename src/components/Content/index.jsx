@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Category from "./Category/Category";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
 import MainContent from "./MainContent/MainContent";
 
 export default function Content() {

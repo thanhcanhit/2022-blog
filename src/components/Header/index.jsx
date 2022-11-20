@@ -7,7 +7,7 @@ import { RiMoonClearFill } from "react-icons/ri";
 import { MdCloseFullscreen } from "react-icons/md";
 import useDarkMode from "../../useDarkMode";
 
-export default function Header({ isTablet }) {
+export default function Header({ isTablet, isPrimary }) {
 	const [isDarkMode, toggleDarkMode] = useDarkMode();
 	const [isOpenMenu, setOpenMenu] = useState(false);
 
@@ -47,87 +47,89 @@ export default function Header({ isTablet }) {
 						)}
 					</button>
 				</div>
-				<nav
-					className={
-						isTablet && isOpenMenu
-							? "nav translate-x-0"
-							: isTablet && !isOpenMenu
-							? "nav"
-							: "hidden lg:block"
-					}
-				>
-					<ul
+				{isPrimary && (
+					<nav
 						className={
-							isTablet
-								? "nav-list flex-col px-4 mt-12 "
-								: "nav-list"
+							isTablet && isOpenMenu
+								? "nav translate-x-0"
+								: isTablet && !isOpenMenu
+								? "nav"
+								: "hidden lg:block"
 						}
 					>
-						<li className="nav-item">
-							<Link
-								onClick={
-									isTablet ? toggleMenu.current : () => {}
-								}
-								to="hero"
-								spy={true}
-								smooth={true}
-								offset={-50}
-								duration={500}
-							>
-								Home
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link
-								onClick={
-									isTablet ? toggleMenu.current : () => {}
-								}
-								to="category"
-								spy={true}
-								smooth={true}
-								offset={-100}
-								duration={500}
-							>
-								Category
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link
-								onClick={
-									isTablet ? toggleMenu.current : () => {}
-								}
-								to="production"
-								spy={true}
-								smooth={true}
-								offset={-50}
-								duration={500}
-							>
-								Production
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link
-								onClick={
-									isTablet ? toggleMenu.current : () => {}
-								}
-								to="about"
-								spy={true}
-								smooth={true}
-								offset={50}
-								duration={500}
-							>
-								About Me
-							</Link>
-						</li>
-						<li>
-							<Button link="https://www.facebook.com/thanhcanhit/">
-								<SiFacebook />
-								Tìm tôi trên Facebook
-							</Button>
-						</li>
-					</ul>
-				</nav>
-				{isTablet && (
+						<ul
+							className={
+								isTablet
+									? "nav-list flex-col px-4 mt-12 "
+									: "nav-list"
+							}
+						>
+							<li className="nav-item">
+								<Link
+									onClick={
+										isTablet ? toggleMenu.current : () => {}
+									}
+									to="hero"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+								>
+									Home
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link
+									onClick={
+										isTablet ? toggleMenu.current : () => {}
+									}
+									to="category"
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={500}
+								>
+									Category
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link
+									onClick={
+										isTablet ? toggleMenu.current : () => {}
+									}
+									to="production"
+									spy={true}
+									smooth={true}
+									offset={-50}
+									duration={500}
+								>
+									Production
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link
+									onClick={
+										isTablet ? toggleMenu.current : () => {}
+									}
+									to="about"
+									spy={true}
+									smooth={true}
+									offset={50}
+									duration={500}
+								>
+									About Me
+								</Link>
+							</li>
+							<li>
+								<Button link="https://www.facebook.com/thanhcanhit/">
+									<SiFacebook />
+									Tìm tôi trên Facebook
+								</Button>
+							</li>
+						</ul>
+					</nav>
+				)} 
+				{isPrimary && isTablet && (
 					<>
 						<button
 							className="fixed z-10 p-1 bottom-5 right-5 text-white bg-primary dark:bg-gray-600 opacity-80 shadow-md rounded-md "

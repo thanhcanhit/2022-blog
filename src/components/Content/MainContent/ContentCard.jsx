@@ -13,7 +13,7 @@ function ContentCard({ data }) {
 	const stringGap = useMemo(() => {
 		let dayGap = Math.floor((Date.now() - date) / (1000 * 3600 * 24));
 		let string = `${dayGap} ngày trước`;
-		if (dayGap === 0) string = "Vừa mới xong hôm nay";
+		if (dayGap === 0) string = "Hôm nay";
 		if (dayGap >= 30) string = `${Math.floor(dayGap / 30)} tháng trước`;
 		if (dayGap > 365) string = `${Math.floor(dayGap / 365)} năm trước`;
 

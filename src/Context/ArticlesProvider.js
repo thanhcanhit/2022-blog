@@ -3,13 +3,24 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 11,
+		name: "Web.dev",
+		path: "/images/article_section/girl-11.jpg",
+		link: "https://thanhcanhit.github.io/web.dev/",
+		date: "11/20/2022",
+		description:
+			"Trang giới thiệu dịch vụ làm website, bản thiết kế lụm ở Figma, sử dụng SCSS.",
+		tag: "Website",
+		srcCode: "https://github.com/thanhcanhit/web.dev",
+	},
+	{
 		id: 10,
 		name: "Nerd Card",
 		path: "/images/article_section/girl-10.jpg",
 		link: "https://thanhcanhit.github.io/nerd-card/",
 		date: "10/22/2022",
 		description:
-			"Website đơn giản thử nghiệm Darkmode. Sử dụng React + Tailwindcss.",
+			"Website đơn giản thử nghiệm Darkmode. Bấm dô mặt trăng, mặt trời để đổi nhe. Sử dụng React + Tailwindcss.",
 		tag: "Website",
 		srcCode: "https://github.com/thanhcanhit/nerd-card/tree/main",
 	},
@@ -20,7 +31,7 @@ const data = [
 		link: "https://thanhcanhit.github.io/lasles-vpn/",
 		date: "10/01/2022",
 		description:
-			"Landing page đơn giản, sử dụng SASS/SCSS để viết css. Dùng thư viện 'slick carousel' để làm SLIDER cuối trang.",
+			"Landing page giới thiệu dịch vụ VPN, sử dụng SCSS. Dùng thư viện 'slick carousel' để làm SLIDER cuối trang.",
 		tag: "Website",
 		srcCode: "https://github.com/thanhcanhit/lasles-vpn",
 	},
@@ -42,7 +53,7 @@ const data = [
 		link: "https://thanhcanhit.github.io/BR-architects/",
 		date: "09/15/2022",
 		description:
-			"Giao diện website dùng Bootstrap 5 để hiện thực, tiết kiệm rất nhiều thời gian so với CSS thuần.",
+			"Website giới thiệu dịch vụ thiết kế công trình, dùng Bootstrap 5 để hiện thực, tiết kiệm rất nhiều thời gian so với CSS thuần.",
 		tag: "Website",
 		srcCode: "https://github.com/thanhcanhit/BR-architects",
 	},
@@ -53,7 +64,7 @@ const data = [
 		link: "https://thanhcanhit.github.io/the-band/",
 		date: "08/04/2022",
 		description:
-			"Phiên bản hoàn thiện hơn của website đầu tiên F8 hướng dẫn làm.",
+			"Trang giới thiệu band nhạc, bán vé các thứ.Phiên bản hoàn thiện hơn của website đầu tiên F8 hướng dẫn làm.",
 		tag: "Website",
 		srcCode: "https://github.com/thanhcanhit/the-band",
 	},
@@ -74,7 +85,7 @@ const data = [
 		path: "/images/article_section/girl-4.jpg",
 		link: "https://thanhcanhit.github.io/SumGame/",
 		date: "06/16/2022",
-		description: "Tính nhẩm nhảm nhí làm bằng HTML, CSS, JS thuần",
+		description: "Game tính nhẩm nhảm nhí làm bằng HTML, CSS, JS thuần",
 		tag: "Application",
 		srcCode: "https://github.com/thanhcanhit/SumGame",
 	},
@@ -96,7 +107,7 @@ const data = [
 		link: "https://thanhcanhit.github.io/Blog/",
 		date: "04/15/2022",
 		description:
-			"Website đơn giản nhưng khá đẹp mắt viết bằng HTML, CSS thuần.",
+			"Website Blog cá nhân đơn giản nhưng khá đẹp mắt viết bằng HTML, CSS thuần.",
 		tag: "Website",
 		srcCode: "https://github.com/thanhcanhit/Blog",
 	},

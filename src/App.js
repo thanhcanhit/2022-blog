@@ -25,7 +25,7 @@ function App() {
 
 	return (
 		<div className="wrapper tap-hilight-none font-jakarta m-0 p-0 w-full overflow-hidden">
-			<Header isTablet={isTablet} />
+			<Header isTablet={isTablet} isPrimary />
 			<Content />
 			<Footer />
 		</div>

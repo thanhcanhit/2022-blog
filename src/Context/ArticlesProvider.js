@@ -3,6 +3,17 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 12,
+		name: "NFT",
+		path: "/images/article_section/girl-12.jpg",
+		link: "https://thanhcanhit.github.io/nft/",
+		date: "11/27/2022",
+		description:
+			"Trang quảng cáo sàn NFT các thứ, bản thiết kế lụm ở Figma, sử dụng Tailwindcss.",
+		tag: "Website",
+		srcCode: "https://github.com/thanhcanhit/nft",
+	},
+	{
 		id: 11,
 		name: "Web.dev",
 		path: "/images/article_section/girl-11.jpg",

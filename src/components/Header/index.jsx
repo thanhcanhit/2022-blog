@@ -128,7 +128,7 @@ export default function Header({ isTablet, isPrimary }) {
 							</li>
 						</ul>
 					</nav>
-				)} 
+				)}
 				{isPrimary && isTablet && (
 					<>
 						<button

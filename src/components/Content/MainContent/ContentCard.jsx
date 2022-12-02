@@ -23,9 +23,9 @@ function ContentCard({ data }) {
 	return (
 		<article className="content-card">
 			<a href={data.link} className="group">
-				<div className="w-full mb-6 h-[220px] rounded-sm overflow-hidden">
+				<div className="w-full mb-6 h-200 md:h-card-img rounded-sm overflow-hidden">
 					<img
-						className="w-full transition-all duration-300 md:h-card-img object-top object-cover group-hover:scale-110 group-hover:grayscale-[40%]"
+						className="w-full h-200 transition-all duration-300 md:h-card-img object-top object-cover group-hover:scale-110 group-hover:grayscale-[40%]"
 						alt={data.name}
 						loading="lazy"
 						src={data.path}

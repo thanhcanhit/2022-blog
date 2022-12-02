@@ -22,16 +22,18 @@ function ContentCard({ data }) {
 
 	return (
 		<article className="content-card">
-			<a href={data.link}>
-				<img
-					className="w-full h-150 mb-6 transition-all duration-300 md:h-card-img object-top object-cover rounded-sm"
-					alt={data.name}
-					loading="lazy"
-					src={data.path}
-				/>
+			<a href={data.link} className="group">
+				<div className="w-full mb-6 h-[220px] rounded-sm overflow-hidden">
+					<img
+						className="w-full transition-all duration-300 md:h-card-img object-top object-cover group-hover:scale-110 group-hover:grayscale-[40%]"
+						alt={data.name}
+						loading="lazy"
+						src={data.path}
+					/>
+				</div>
 				<h4
 					title={data.name}
-					className="text-15 sub-heading-2 md:text-20 two-line"
+					className="group-hover:text-primary duration-200 group-hover:animate-pulse text-15 sub-heading-2 md:text-20 two-line"
 				>
 					{data.name}
 				</h4>

@@ -12,7 +12,7 @@ function MainContent({ current, sortType, changeSortType }) {
 			current === 0
 				? articles
 				: articles.filter(
-						(item) => item.tag === categoryData[current].name
+						(item) => item.tag.includes(categoryData[current].value)
 				  );
 
 		switch (sortType) {

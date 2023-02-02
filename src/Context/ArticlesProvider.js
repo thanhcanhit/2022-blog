@@ -3,6 +3,17 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 13,
+		name: "Peach TOEIC",
+		path: "/images/article_section/girl-13.jpg",
+		link: "/peach-toeic",
+		date: "2/2/2023",
+		description:
+			"Ứng dụng học tập và ôn luyện các từ vựng TOEIC thiết yếu nhất cho các bạn có dự định thi TOEIC",
+		tag: ["app"],
+		srcCode: "https://github.com/thanhcanhit/peach-toeic",
+	},
+	{
 		id: 12,
 		name: "NFT",
 		path: "/images/article_section/girl-12.jpg",

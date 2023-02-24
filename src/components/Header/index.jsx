@@ -17,8 +17,8 @@ export default function Header({ isTablet, isPrimary }) {
 
 	return (
 		<header className="fixed inset-0 bottom-[unset] w-full h-header z-10 dark:text-dark-grey bg-white dark:bg-dark-black shadow-heading dark:shadow-lg">
-			<div className="flex justify-between items-center h-full container">
-				<div className="flex w-full lg:w-auto justify-between lg:justify-start gap-5 items-center ">
+			<div className="container flex items-center justify-between h-full">
+				<div className="flex items-center justify-between w-full gap-5 lg:w-auto lg:justify-start ">
 					<a
 						href="/"
 						className="font-semibold text-24 md:text-36 tooltip"
@@ -32,7 +32,7 @@ export default function Header({ isTablet, isPrimary }) {
 					<button
 						onClick={toggleDarkMode}
 						message="Chuyển chế độ sáng/tối"
-						className="relative top-1 select-none tooltip after:top-10"
+						className="relative select-none top-1 tooltip after:top-10"
 					>
 						{isDarkMode ? (
 							<RiMoonClearFill
@@ -75,7 +75,7 @@ export default function Header({ isTablet, isPrimary }) {
 									offset={-50}
 									duration={500}
 								>
-									Home
+									Go Top
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -132,7 +132,7 @@ export default function Header({ isTablet, isPrimary }) {
 				{isPrimary && isTablet && (
 					<>
 						<button
-							className="fixed z-10 p-1 bottom-5 right-5 text-white bg-primary dark:bg-gray-600 opacity-80 shadow-md rounded-md "
+							className="fixed z-10 p-1 text-white rounded-md shadow-md bottom-5 right-5 bg-primary dark:bg-gray-600 opacity-80 "
 							onClick={toggleMenu.current}
 						>
 							{isOpenMenu ? (

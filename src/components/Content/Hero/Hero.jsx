@@ -16,15 +16,14 @@ function Hero() {
 						<span className="block lg:inline-block animate-flyUp text-primary">
 							Thanh Cảnh
 						</span>
-						Front End Dev
+						FullStack dev	
 						<span className="block lg:inline text-20 text-primary">
-							tập sự
+							in future
 						</span>
 					</h1>
-					<p className="text-dark-grey text-justify lg:paragraph-1 lg:border-l-4 lg:border-black dark:lg:border-primary lg:pl-2">
-						Trong trang web này mình sẽ đăng tải các phần mềm, trang
-						web và source code của chúng trong suốt quá trình học
-						tập và nghiên cứu của bản thân.
+					<p className="text-justify text-dark-grey lg:paragraph-1 lg:border-l-4 lg:border-black dark:lg:border-primary lg:pl-2">
+						Phần mềm - Website nhảm nhí và source code của chúng
+						
 					</p>
 				</div>
 				<div
@@ -33,7 +32,7 @@ function Hero() {
 				>
 					<img
 						src={HeroImg}
-						className="select-none w-full"
+						className="w-full select-none"
 						alt="Coder áo xanh lá"
 					/>
 				</div>

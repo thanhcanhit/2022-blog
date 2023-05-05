@@ -3,6 +3,28 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 15,
+		name: "Computer Parts Shop - Ứng dụng quản lí cửa hàng linh kiện",
+		path: "/images/article_section/girl-15.jpg",
+		link: "https://github.com/thanhcanhit/ComputerPartsShop2",
+		date: "5/5/2023",
+		description:
+			"Bài tập lớn môn lt hướng sự kiện 2023, Sử dụng Java swing. Có các tính năng như: Đăng nhập, tạo hóa đơn bán, nhập, quản lí sản phẩm, thống kê, quản lí nhân viên, khách hàng,...",
+		tag: ["app"],
+		srcCode: "https://github.com/thanhcanhit/ComputerPartsShop2",
+	},
+	{
+		id: 14,
+		name: "Menly - website thời trang nam",
+		path: "/images/article_section/girl-14.jpg",
+		link: "/Web-systems-and-technology",
+		date: "5/5/2023",
+		description:
+			"Bài tập lớn môn Hệ thống công nghệ Web 2023, Sử dụng Bootstrap 5, jQuery. Có các tính năng như: đăng nhập, đăng ký, duyệt sản phẩm, tìm kiếm, giỏ hàng,...",
+		tag: ["web"],
+		srcCode: "https://github.com/thanhcanhit/Web-systems-and-technology",
+	},
+	{
 		id: 13,
 		name: "Peach TOEIC",
 		path: "/images/article_section/girl-13.jpg",

@@ -16,14 +16,16 @@ function Hero() {
 						<span className="block lg:inline-block animate-flyUp text-primary">
 							Thanh Cảnh
 						</span>
-						FullStack dev	
-						<span className="block lg:inline text-20 text-primary">
-							in future
-						</span>
+						<span className="text-primary">fullstack</span>{" "}
+						developer
 					</h1>
 					<p className="text-justify text-dark-grey lg:paragraph-1 lg:border-l-4 lg:border-black dark:lg:border-primary lg:pl-2">
 						Phần mềm - Website nhảm nhí và source code của chúng
-						
+						<br />
+						<span className="text-15">
+							(Trang web sẽ được remake trong thời gian tới thành
+							fullstack app)
+						</span>
 					</p>
 				</div>
 				<div

@@ -3,15 +3,26 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 16,
+		name: "Pokedex",
+		path: "/images/article_section/girl-16.jpeg",
+		link: "https://thanhcanhit.github.io/pokedex/",
+		date: "7/1/2023",
+		description:
+			"Sử dụng nguồn dữ liệu từ PokeAPI.<br/> Công nghệ sử dụng: ReactJS, Typscript, Bootstrap 5.",
+		tag: ["app"],
+		srcCode: "https://github.com/thanhcanhit/pokedex",
+	},
+	{
 		id: 15,
 		name: "Computer Parts Shop - Ứng dụng quản lí cửa hàng linh kiện",
 		path: "/images/article_section/girl-15.jpg",
-		link: "https://github.com/thanhcanhit/ComputerPartsShop2",
+		link: "https://github.com/thanhcanhit/ComputerPartsShop",
 		date: "5/5/2023",
 		description:
 			"Bài tập lớn môn lt hướng sự kiện 2023, Sử dụng Java swing. Có các tính năng như: Đăng nhập, tạo hóa đơn bán, nhập, quản lí sản phẩm, thống kê, quản lí nhân viên, khách hàng,...",
 		tag: ["app"],
-		srcCode: "https://github.com/thanhcanhit/ComputerPartsShop2",
+		srcCode: "https://github.com/thanhcanhit/ComputerPartsShop",
 	},
 	{
 		id: 14,

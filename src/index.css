@@ -35,40 +35,40 @@
 
   .wrapper {
     width: min(1440px, calc(100%-8px));
-    @apply mx-auto px-2 lg:px-0;
+    @apply px-2 mx-auto lg:px-0;
   }
   
   .container {
     width: min(1250px, calc(100%-8px));
-    @apply mx-auto px-2 lg:px-0;
+    @apply px-2 mx-auto lg:px-0;
   }
 
   .heading-1 {
-    @apply text-64 font-bold;
+    @apply font-bold text-64;
   }
 
   .sub-heading-1 {
-    @apply text-24 font-bold;
+    @apply font-bold text-24;
   }
 
   .sub-heading-2 {
-    @apply text-20 font-bold;
+    @apply font-bold text-20;
   }
 
   .paragraph-1 {
-    @apply text-20 font-normal;
+    @apply font-normal text-20;
   }
 
   .paragraph-2 {
-    @apply text-18 font-normal;
+    @apply font-normal text-18;
   }
   
   .paragraph-3-semi {
-    @apply text-16 font-semibold;
+    @apply font-semibold text-16;
   }
 
   .paragraph-4 {
-    @apply text-14 font-normal;
+    @apply font-normal text-14;
   }
   
   .nav {
@@ -80,7 +80,7 @@
   }
 
   .nav-item {
-    @apply text-hover bottom-slide select-none cursor-pointer;
+    @apply cursor-pointer select-none text-hover bottom-slide;
   }
 
   .section-name {
@@ -88,7 +88,7 @@
   }
 
   .category-card {
-    @apply  w-category-card h-250 bg-white dark:bg-zinc-800 hover:bg-primary dark:text-dark-grey rounded-md flex-shrink-0 shadow-lg cursor-pointer transition-colors duration-200 select-none snap-start;
+    @apply  flex-shrink-0 transition-colors duration-200 bg-white rounded-md shadow-lg cursor-pointer select-none w-category-card h-250 dark:bg-zinc-800 hover:bg-primary dark:text-dark-grey snap-start;
   }
 
   .content-card {
@@ -100,11 +100,11 @@
   }
 
   .footer-heading {
-    @apply sub-heading-2 uppercase mb-6 text-primary;
+    @apply mb-6 uppercase sub-heading-2 text-primary;
   }
 
   .footer-item {
-    @apply flex gap-2 items-center justify-center lg:justify-start mb-2 select-auto text-15 hover:text-primary transition-colors duration-200;
+    @apply flex items-center justify-center gap-2 mb-2 transition-colors duration-200 select-auto lg:justify-start text-15 hover:text-primary;
   }
 
   .tooltip {

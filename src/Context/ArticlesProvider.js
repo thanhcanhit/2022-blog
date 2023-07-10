@@ -3,6 +3,17 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 17,
+		name: "Peach Toeic API",
+		path: "/images/article_section/girl-17.png",
+		link: "https://documenter.getpostman.com/view/28290517/2s946bBaJg",
+		date: "7/10/2023",
+		description:
+			"API cung cấp dữ liệu về hơn 600 từ vựng TOEIC thuộc 50 chủ đề. Bao gồm nội dung từ vựng, chủ đề, hình ảnh, âm thanh",
+		tag: ["web"],
+		srcCode: "https://github.com/thanhcanhit/peach-toeic-api",
+	},
+	{
 		id: 16,
 		name: "Pokedex",
 		path: "/images/article_section/girl-16.jpeg",

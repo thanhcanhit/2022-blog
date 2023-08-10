@@ -3,6 +3,17 @@ import { createContext } from "react";
 // Date format: "MM/dd/yyyy"
 const data = [
 	{
+		id: 18,
+		name: "Vietnamse Cookery",
+		path: "/images/article_section/girl-18.png",
+		link: "https://thanhcanhit.github.io/vietnamse-cookery/",
+		date: "08/10/2023",
+		description:
+			"Ứng dụng hướng dẫn nấu ăn & địa điểm du lịch cho người nước ngoài, ý tưởng từ các bạn Open University. Sử dụng TS, React + Redux để hiện thực.",
+		tag: ["app"],
+		srcCode: "https://github.com/thanhcanhit/vietnamse-cookery",
+	},
+	{
 		id: 17,
 		name: "Peach Toeic API",
 		path: "/images/article_section/girl-17.png",
